@@ -1,0 +1,50 @@
+body{
+    background-image: url("../img/body-bg.gif");
+    margin:0;
+}
+
+.movie{
+    margin:0 auto;
+    display: table;
+    margin-top:10%;
+}
+.movie .info div{
+    padding:10px;
+    font-weight:600;
+    font-size:18px;
+    color: #ffffff;
+}
+.movie i{
+    color: #ffffff;
+    padding:5px 10px;
+}
+@keyframes new {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.upload{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:20px;
+    color: #ffffff;
+    font-weight:600;
+    animation:new 1s;
+}
+
+input,select{
+    padding:2px;
+    font-weight:600;
+}
+
+.login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:20px;
+    color: #ffffff;
+    font-weight:600;
+    animation:new 1s;
+}

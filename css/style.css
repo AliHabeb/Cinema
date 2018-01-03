@@ -1,0 +1,160 @@
+body{
+    background-image: url("../img/body-bg.gif");
+    margin:0;
+}
+::-webkit-scrollbar{
+    background-color: #20211f;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 8px;
+}
+
+section{
+    padding:10px;
+    border-radius: 5px;
+    margin-top:50px;
+
+}
+
+.navation{
+    padding:10px 0px;
+    border-bottom: 1px dotted #ffffff;
+    overflow: hidden;
+}
+.navation ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    float: left;
+}
+.navation ul li{
+    float: left;
+}
+
+.navation ul li a{
+    padding:4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.navation ul li a:hover{
+    color: rgba(180,10,10,0.8);
+    text-decoration: underline overline;
+}
+.navation input{
+    float: right;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(10,190,10,0.2);
+    padding:6px 2px;
+    font-weight:600;
+    color: #ffffff;
+    outline:none;
+    width:10%;
+    transition: all .5s;
+}
+.navation input:focus{
+    width:40%;
+}
+
+.slider{
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom:2px;
+}
+
+.slider-img{
+    height:100%;
+    width:100%;
+    display: none;
+    animation: next 0.7s;
+    position: absolute;
+}
+
+@keyframes next {
+    from{right:-100%;}
+    to{right:0;}
+}
+
+.movies{
+    margin: 0 auto;
+    display:table;
+    overflow: hidden;
+}
+#views{
+    float: right;
+}
+.right,.left{
+    overflow: hidden;
+    padding:2px;
+    border:1px solid rgba(100,100,100,0.5);
+    float: left;
+    border-radius: 6px;
+}
+.right{
+    margin-left: 40px;
+}
+.title{
+    text-align: center;
+    color: #ffffff;
+    font-weight:700;
+    padding:20px;
+}
+.right .movie-box{
+    float: none;
+    margin-bottom: 10px;
+}
+.movies-row{
+    overflow: hidden;
+    padding:4px;
+}
+.movie-box{
+    height:250px;
+    width:160px;
+    float: left;
+    padding:2px;
+    margin-left:4px;
+    border:1px dotted rgba(180,10,10,0.8);
+}
+
+header{
+    position: fixed;
+    z-index: 5;
+    right:0;
+    left:0;
+    top:0;
+}
+
+.movie-img{
+    height:80%;
+    overflow: hidden;
+}
+.movie-img img{
+    height:100%;
+    width:100%;
+    transition: all .5s;
+}
+
+.movie-img img:hover{
+    transform: scale(1.1);
+}
+.movie-info{
+    height:20%;
+}
+
+.movie-name{
+    font-weight: 700;
+    color: #ffffff;
+    padding:2px;
+}
+.movie-type{
+    font-weight: 600;
+    color: #3d6f11;
+    padding:2px;
+}
